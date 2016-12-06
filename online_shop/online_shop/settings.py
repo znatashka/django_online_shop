@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'shop',
     'cart',
     'orders',
+    'paypal.standard.ipn',
+    'payment',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +127,7 @@ CART_SESSION_ID = 'cart'
 
 # Email
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Paypal
+PAYPAL_RECEIVER_EMAIL = 'znatashka@ya.ru'
+PAYPAL_TEST = True
